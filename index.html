@@ -481,15 +481,14 @@
             class="ff-gb-r fpt-20 fc-grey16 lhpt-30 ls-30 pb-cont-25 new-pt-60 new-pb-0 aos-init aos-animate"
           >
             <span
-              >서울특별시 강남구 테헤란로 322<br />
+              >서울특별시 강남구 테헤란로 322  <a
+                href="javascript:;"
+                data-clipboard-text="서울특별시 강남구 테헤란로 322"
+                class="btn-copy-el btn-copy-accord btn-addr-copy btn-round btn-copy" style="border-radius: 15px; "
+                >복사하기</a
+              ><br />
               한신인터밸리24 빌딩 4층<br /></span
-            ><b>아펠가모 선릉</b>
-            <a
-            href="javascript:;"
-            data-clipboard-text="서울특별시 강남구 테헤란로 322"
-            class="btn-copy-el btn-copy-accord btn-bank-copy btn-round btn-copy"
-            >복사하기</a
-          >
+            ><b>아펠가모 선릉</b><br />
           </div>
 
           <div class="mb-cont-25 new-pt-30 new-mb-0 new-pb-0">
@@ -2058,9 +2057,7 @@
                           </div>
                           <div class="account-info py-cont-15">
                             <div class="item-account">
-                              <div class="desc-account">
-                                농협 028-02-024574
-                              </div>
+                              <div class="desc-account">농협 028-02-024574</div>
                               <a
                                 href="javascript:;"
                                 data-clipboard-text="028-02-024574"
@@ -2070,7 +2067,6 @@
                             </div>
                             <div class="item-account">
                               <div class="desc-account">예금주 : 이기승</div>
-
                             </div>
                           </div>
                         </div>
@@ -2421,6 +2417,10 @@
             alert("계좌번호를 복사했습니다");
           }
 
+          if ($(e.trigger).hasClass("btn-addr-copy")) {
+            alert("주소를 복사했습니다");
+          }
+
           e.clearSelection();
         });
 
@@ -2448,6 +2448,9 @@
 
           if ($(e.trigger).hasClass("btn-bank-copy")) {
             alert("계좌번호를 복사했습니다");
+          }
+          if ($(e.trigger).hasClass("btn-addr-copy")) {
+            alert("주소를 복사했습니다");
           }
 
           e.clearSelection();
