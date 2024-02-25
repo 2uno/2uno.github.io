@@ -4209,8 +4209,8 @@ html.set-fs-large .contact-type-accordion > .mx-cont-50 {
 	font-family: Noto Sans KR, sans-serif;
 	font-size: 15px;
 	width: 5.625rem;
-	height: 1.375rem;
-	line-height: .638rem;
+	height: 1.875rem;
+	line-height: .938rem;
 	padding-top: .4rem;
 	padding-bottom: .4rem
 }
@@ -4251,10 +4251,10 @@ html.set-fs-large .contact-type-accordion > .mx-cont-50 {
 .box-attend .btn-round {
     display: inline-block;
     width: 3.125rem;
-    height: 1.0rem;
+    height: 1.25rem;
     margin: 0 0.125rem;
     padding: 0;
-    line-height: 1.0rem;
+    line-height: 1.25rem;
     text-align: center;
     border-radius: 2rem;
 }
