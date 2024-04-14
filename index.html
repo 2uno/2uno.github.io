@@ -91,7 +91,7 @@
         >
           <div
             data-aos=""
-            class="d-flex pb-cont-50 aos-init new-pb-62 aos-animate"
+            class="d-flex pb-cont-10 aos-init new-pb-20 aos-animate"
           >
             <div class="d-flex flex-1"></div>
             <div class="d-flex align-items-center justify-content-center">
@@ -118,11 +118,21 @@
             </div>
             <div class="d-flex flex-1"></div>
           </div>
-          <div class="position-relative overflow-hidden">
+          <div class="position-relative overflow-hidden" style="scale: 80%">
+            <link
+              rel="stylesheet"
+              href="https://jhammann.github.io/sakura/dist/sakura.css"
+            />
+            <div id="sakura-petals"></div>
+            <script src="https://jhammann.github.io/sakura/dist/sakura.js"></script>
+            <script>
+              var sakura = new Sakura("#sakura-petals");
+            </script>
+
             <img src="./assets/sample/main.jpg" alt="" class="img-fluid" />
           </div>
 
-          <div class="pt-cont-50 ff-gb-r fpt-22 fc-grey1 ls-30 lh-30 new-pt-63">
+          <div class="ff-gb-r fpt-22 fc-grey1 ls-30 lh-30">
             2024년 7월 6일 토요일 오후 5시<span
               ><br /><b>아펠가모 선릉</b></span
             >
@@ -481,10 +491,12 @@
             class="ff-gb-r fpt-20 fc-grey16 lhpt-30 ls-30 pb-cont-25 new-pt-60 new-pb-0 aos-init aos-animate"
           >
             <span
-              >서울특별시 강남구 테헤란로 322 <a
+              >서울특별시 강남구 테헤란로 322
+              <a
                 href="javascript:;"
                 data-clipboard-text="서울특별시 강남구 테헤란로 322"
-                class="btn-copy-el btn-copy-accord btn-addr-copy btn-round btn-copy" style="border-radius: 15px; padding:4px 4px;"
+                class="btn-copy-el btn-copy-accord btn-addr-copy btn-round btn-copy"
+                style="border-radius: 15px; padding: 4px 4px"
                 >복사하기</a
               ><br />
               한신인터밸리24 빌딩 4층<br /></span
@@ -2460,12 +2472,10 @@
     </script>
 
     <!--주소 넣기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-    
-    <script type="text/javascript">
 
+    <script type="text/javascript">
       function kakaoShare() {
         Kakao.Share.sendCustom({
-         
           templateId: 104721,
           templateArgs: {
             TITLE: "은호&송희 결혼식에 초대합니다!",
