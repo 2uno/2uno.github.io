@@ -1,6 +1,8 @@
 .music-player {
     text-align: right;
     margin-top: 5px;
+    position:fixed;
+    z-index: 9999;
   }
   
   #play-pause-btn {
