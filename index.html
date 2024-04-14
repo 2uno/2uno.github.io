@@ -27,6 +27,7 @@
     <!--메인 css 수정할 것~~~~~~~~~~~~~~~~~~~~~~-->
     <link rel="stylesheet" href="/css/style.css" />
     <!--메인 css 수정할 것~~~~~~~~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="css/music.css">
 
     <link
       href="https://webfontworld.github.io/jikji/JGaeguJaengyi.css"
@@ -82,6 +83,14 @@
     data-aos-delay="0"
     class="wedding1"
   >
+    <div class="container">
+      <div class="music-player">
+        <audio id="audio" src="/assets/music/bgm.mp3" autoplay></audio>
+        <button id="play-pause-btn" class="play"></button>
+      </div>
+      <script src="js/music.js"></script>
+    </div>
+  
     <div class="cardwrapper">
       <div class="container">
         <!-- 상단 신랑/신부 정보:s -->

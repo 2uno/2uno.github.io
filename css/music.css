@@ -1,0 +1,23 @@
+.music-player {
+    text-align: right;
+    margin-top: 5px;
+  }
+  
+  #play-pause-btn {
+    width: 10px;
+    height: 10px;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #play-pause-btn.play {
+    background-image: url('/assets/music/play.png'); /* 재생 버튼 이미지 */
+    background-size: cover;
+  }
+  
+  #play-pause-btn.pause {
+    background-image: url('/assets/music/stop.png'); /* 일시정지 버튼 이미지 */
+    background-size: cover;
+  }
+  
