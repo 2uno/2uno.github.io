@@ -1,21 +1,18 @@
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>jQuery - 벚꽃 흩날리는 효과 | 컨트롤 + CCCV</title>
-    <meta name="description" content="jQuery - 벚꽃 흩날리는 효과 | 컨트롤 + CCCV" />
-    <meta name="robots" content="noindex">
-    <link rel="shortcut icon" href="https://ctrlcccv.github.io/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<html lang="ko" class="set-ff-gb set-fw-normal set-fs-normal">
+  <head>
+    <title>이은호&최송희 모바일 청첩장</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=0, maximum-scale=1.0, user-scalable=no"
+    />
+
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!--기본틀 css-->
 
     <link rel="stylesheet" href="/css/jquery-ui.css" />
     <!--ui css-->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css" />
     <!--스크롤 애니메이션 css-->
     <link rel="stylesheet" href="/css/owl.carousel.min.css" />
     <!--버튼 css-->
@@ -30,12 +27,531 @@
     <!--메인 css 수정할 것~~~~~~~~~~~~~~~~~~~~~~-->
     <link rel="stylesheet" href="/css/style.css" />
     <!--메인 css 수정할 것~~~~~~~~~~~~~~~~~~~~~~-->
-    <link rel="stylesheet" href="css/music.css">
-    <link rel="stylesheet" href="css/masking.css">
+    <link rel="stylesheet" href="css/music.css" />
+    <link rel="stylesheet" href="css/masking.css" />
 
-</head>
-<body>
+    <link
+      href="https://webfontworld.github.io/jikji/JGaeguJaengyi.css"
+      rel="stylesheet"
+    />
 
-</body>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/js/jquery.form.js"></script>
+
+    <script type="text/javascript" src="/js/popper.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script type="text/javascript" src="/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/js/fancybox.umd.js"></script>
+    <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=iyw0wr4731
+  "
+    ></script>
+    <script
+      type="text/javascript"
+      src="/js/jquery.rwdImageMaps.min.js"
+    ></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/notifIt.js"></script>
+    <script type="text/javascript" src="/js/clipboard.min.js"></script>
+    <script src="/js/moment.min.js"></script>
+
+    <script>
+      let DOMAIN = "";
+      let IS_CARD = true;
+      $(document).ready(function () {
+        $(document).on("contextmenu dragstart selectstart", function (e) {
+          return false;
+        });
+      });
+    </script>
+  </head>
+  <body
+    data-aos-easing="ease"
+    data-aos-duration="1200"
+    data-aos-delay="0"
+    class="wedding1"
+  >
+    <div class="cardwrapper">
+      <div class="container">
+        <div
+          style="
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-end;
+          "
+          class="new-pt-30"
+        >
+          <div class="music-player">
+            <audio id="audio" src="/assets/music/bgm.mp3" autoplay></audio>
+            <button id="play-pause-btn" class="pause"></button>
+          </div>
+          <script src="js/music.js"></script>
+        </div>
+        <!-- 상단 신랑/신부 정보:s -->
+        <div
+          class="unit-item unit-main aos-init new-pt-60 new-pb-0"
+          data-aos="zoom-out"
+        >
+          <div class="d-flex pb-cont-10 aos-init new-pb-20">
+            <div class="d-flex flex-1"></div>
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="ff-gb-r fpt-24 ls-30 fc-pink1">이은호</span>
+            </div>
+            <div class="d-flex flex-1"></div>
+            <div
+              class="d-flex flex-column align-items-center justify-content-center"
+            >
+              <div class="ff-gb-r fpt-36 ls-45 fc-pink1">07</div>
+              <div
+                style="
+                  width: 3.625rem;
+                  height: 0.063rem;
+                  margin: 0.125rem 0 0.313rem;
+                  background-color: #d97d83;
+                "
+              ></div>
+              <div class="ff-gb-r fpt-36 ls-45 fc-pink1">06</div>
+            </div>
+            <div class="d-flex flex-1"></div>
+            <div class="d-flex align-items-center justify-content-center">
+              <span class="ff-gb-r fpt-24 ls-30 fc-pink1">최송희</span>
+            </div>
+            <div class="d-flex flex-1"></div>
+          </div>
+          <div class="position-relative overflow-hidden" style="scale: 80%">
+            <link rel="stylesheet" href="/css/blossom.css" />
+            <div class="cherry_blossom">
+              <img
+                src="./assets/sample/main.jpg"
+                alt=""
+                class="img-fluid target alpha-target"
+              />
+            </div>
+          </div>
+
+          <div class="ff-gb-r fpt-22 fc-grey1 ls-30 lh-30">
+            2024년 7월 6일 토요일 오후 5시<span
+              ><br /><b>아펠가모 선릉</b></span
+            >
+          </div>
+        </div>
+        <!-- 상단 신랑/신부 정보:e -->
+        <!-- 2 -->
+
+        <!-- 카카오톡초대:s -->
+        <div
+          class="unit-share pt-0 unit-share-group share-footer-bg-1"
+          style="position: relative; z-index: 1000; margin-top: 0px"
+        >
+          <a
+            href="javascript:;"
+            onclick="javascript:kakaoShare();"
+            class="btn-kakaotalk-share"
+          >
+            <div class="pb-cont-10">
+              <img src="assets/icon/kakaotalk.png" style="width: 1.4375rem" />
+            </div>
+            카카오톡 공유
+          </a>
+          <!--수정하기ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ주소넣기ㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣㅣ-->
+          <a
+            href="javascript:;"
+            data-clipboard-text="https://2uno.github.io"
+            class="btn-copy-el btn-url-copy btn-round btn-copy btn-kakaotalk-share btn-url-share"
+          >
+            <div class="pb-cont-10">
+              <img src="assets/icon/copylink.png" style="width: 1.125rem" />
+            </div>
+            링크 복사
+          </a>
+        </div>
+        <!-- 카카오톡초대:e -->
+
+        <!-- 방명록:s -->
+        <div
+          class="unit-item greetings-text aos-init new-pt-120 new-pb-0" style="margin-bottom: 120px"
+          data-aos="fade-up"
+        >
+          <div class="ff-gb-r fc-pink1">
+            <div class="pt-cont-50 new-pt-60">
+              <img
+                src="/assets/icon/flower1.png"
+                alt="꽃 이미지"
+                style="width: 1.375rem"
+                class="aos-init"
+              />
+            </div>
+            <div class="fs-12 fc-pink1-80 pt-cont-15 ls-500">Guest Book</div>
+            <h2 class="fpt-24 ls-300 pt-cont-15 new-pt-30">축하메시지</h2>
+          </div>
+          <div class="guest-body" style="padding-left:15px; padding-right:15px">
+            <div class="guest-msgbox" style="display:block">
+              adjflkasdjfkladsfjkladf
+
+            </div>
+
+          </div>
+
+        </div>
+        <!-- 방명록:e -->
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      // 기본 값 설정
+      const defaults = {
+        speed: 5,
+        maxSize: 15,
+        minSize: 10,
+        newOn: 400,
+      };
+
+      // 벚꽃 영역 크기를 저장할 변수
+      var $wrap = $(".cherry_blossom");
+      let wrapH = $wrap.height();
+      let wrapW = $wrap.width();
+
+      // 벚꽃 잎 생성
+      const $petal = $('<span class="petal"></span>');
+
+      // 랜덤 회전 값을 생성하는 함수
+      const getRandomRotate = () => {
+        const rotateX = 360;
+        const rotateY = Math.random() * 60 - 30;
+        const rotateZ = Math.random() * 120 - 30;
+        const translateX = Math.random() * 10 - 5;
+        const translateY = Math.random() * 10 - 10;
+        const translateZ = Math.random() * 15;
+        return `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg) translateX(${translateX}px) translateY(${translateY}px) translateZ(${translateZ}px)`;
+      };
+
+      // 무작위 흔들림 애니메이션 배열 생성
+      const randomSwayAnims = [...Array(10)].map(getRandomRotate);
+
+      // 특정 요소에 흔들림 애니메이션 적용
+      const applySwayAnim = (element) => {
+        const randomSway =
+          randomSwayAnims[Math.floor(Math.random() * randomSwayAnims.length)];
+        element.css("transform", randomSway);
+        setTimeout(() => {
+          applySwayAnim(element);
+        }, 1000);
+      };
+
+      // 벚꽃 잎 생성 함수
+      const petalGen = () => {
+        setTimeout(requestAnimationFrame, defaults.newOn, petalGen);
+
+        const petal = $petal.clone();
+        const size =
+          Math.floor(
+            Math.random() * (defaults.maxSize - defaults.minSize + 1)
+          ) + defaults.minSize;
+        const startPosLeft = Math.random() * wrapW;
+        const fallTime = (wrapH * 0.1 + Math.random() * 5) / defaults.speed;
+        const horizontalOffset = Math.random() * 2 - 1;
+
+        // 애니메이션 끝나면 제거
+        petal
+          .on("animationend", () => {
+            petal.remove();
+          })
+          .css({
+            width: size,
+            height: size,
+            left: startPosLeft,
+            position: "absolute",
+            animation: `fall ${fallTime}s linear`,
+          })
+          .appendTo($wrap);
+
+        // 위치 업데이트 함수
+        const updatePos = () => {
+          petal.css("left", `+=${horizontalOffset}`);
+          requestAnimationFrame(updatePos);
+        };
+
+        updatePos();
+        applySwayAnim(petal);
+      };
+
+      // 창 크기가 변경될 때 문서 크기 업데이트
+      $(window).resize(() => {
+        wrapH = $wrap.height();
+        wrapW = $wrap.width();
+      });
+
+      // 로딩 완료 후 벚꽃 잎 생성 시작
+      $(window).on("load", () => {
+        requestAnimationFrame(petalGen);
+      });
+    </script>
+
+    <style>
+      .fancybox__content img {
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+    </style>
+
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=iyw0wr4731&amp;submodules=panorama,geocoder,drawing,visualization"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps-panorama.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps-geocoder.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps-drawing.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://openapi.map.naver.com/openapi/v3/maps-visualization.js"
+    ></script>
+    <script>
+      var address = "서울특별시 강남구 테헤란로 322 한신인터밸리24 빌딩 4층";
+      searchAddressToCoordinate(address);
+
+      function searchAddressToCoordinate(address) {
+        var map = new naver.maps.Map("_naverMap", {
+          center: new naver.maps.LatLng(37.5033867, 127.0465507),
+          zoom: 15,
+          mapTypeControl: true,
+        });
+
+        var marker = new naver.maps.Marker({
+          position: new naver.maps.LatLng(37.5033867, 127.0465507),
+          map: map,
+        });
+
+        var infoWindow = new naver.maps.InfoWindow({
+          content:
+            '<div style="text-align:center;padding:10px;width:150px;display:inline-block;font-size:13px;" class="ff-gb-r">아펠가모 선릉</div>',
+        });
+        infoWindow.open(map, marker);
+      }
+    </script>
+
+    <script
+      src="https://t1.kakaocdn.net/kakao_js_sdk/2.6.0/kakao.min.js"
+      integrity="sha384-6MFdIr0zOira1CHQkedUqJVql0YtcZA1P0nbPrQYJXVJZUkTk/oX4U9GhUIs3/z8"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(window).on("load", function () {
+        var unit_array = $(".unit-item")[$(".unit-item").length - 1];
+        if ($(unit_array).hasClass("add_photo2")) {
+          $(".contact-card .wrapper-parents .w-full:last-child").attr(
+            "style",
+            "padding-bottom: 0!important;"
+          );
+          $(unit_array).attr(
+            "style",
+            "padding-bottom:0 !important;padding-top:60px !important;"
+          );
+        } else {
+          if ($(unit_array).hasClass("unit-bank")) {
+            $(".unit-share.unit-share-group").attr(
+              "style",
+              "position:relative;z-index:1000;margin-top:0px;"
+            );
+          } else {
+            $(".unit-share.unit-share-group").attr(
+              "style",
+              "position:relative;z-index:1000;margin-top:60px;"
+            );
+            $(".contact-card .wrapper-parents .w-full:last-child").attr(
+              "style",
+              "padding-bottom: 0!important;"
+            );
+          }
+        }
+
+        Fancybox.bind(".owl-stage .owl-item .item, #_gallery .grid-item", {
+          groupAll: !0,
+          Thumbs: {
+            autoStart: !1,
+          },
+          Toolbar: {
+            display: ["counter", "fullscreen", "close"],
+          },
+          Image: {
+            protected: true,
+          },
+          autoFocus: !1,
+          animated: !1,
+          protect: true,
+          scrolling: !1,
+          autoSize: false,
+          fitToView: true,
+          touch: false,
+          trapFocus: !1,
+          placeFocusBack: !1,
+          on: {
+            done: (fancybox, slide) => {
+              $(".fancybox__image").on("contextmenu", function (e) {
+                return false;
+              });
+            },
+          },
+        });
+      });
+
+      $(document).ready(function (e) {
+        $(".fancybox__container").on("touchmove", function (event) {
+          event.preventDefault();
+          event.stopPropagation();
+        });
+
+        $("img[usemap]").rwdImageMaps();
+        var clipboard = new ClipboardJS(".btn-copy-el");
+        clipboard.on("success", function (e) {
+          if ($(e.trigger).hasClass("btn-invitation-copy")) {
+            alert("초대장 링크를 복사했습니다");
+          }
+
+          if ($(e.trigger).hasClass("btn-url-copy")) {
+            alert("초대장 링크를 복사했습니다");
+          }
+
+          if ($(e.trigger).hasClass("btn-event-hash-copy")) {
+            alert("해시 태그를 복사했습니다");
+          }
+
+          if ($(e.trigger).hasClass("btn-bank-copy")) {
+            alert("계좌번호를 복사했습니다");
+          }
+
+          if ($(e.trigger).hasClass("btn-addr-copy")) {
+            alert("주소를 복사했습니다");
+          }
+
+          e.clearSelection();
+        });
+
+        clipboard.on("error", function (e) {
+          console.error("Action:", e.action);
+          console.error("Trigger:", e.trigger);
+        });
+
+        var clipboard2 = new ClipboardJS(".btn-modal-copy-el", {
+          container: document.getElementById("modal_account"),
+        });
+
+        clipboard2.on("success", function (e) {
+          console.info("Action:", e.action);
+          console.info("Text:", e.text);
+          console.info("Trigger:", e.trigger);
+
+          if ($(e.trigger).hasClass("btn-invitation-copy")) {
+            alert("초대장 링크를 복사했습니다");
+          }
+
+          if ($(e.trigger).hasClass("btn-event-hash-copy")) {
+            alert("해시 태그를 복사했습니다");
+          }
+
+          if ($(e.trigger).hasClass("btn-bank-copy")) {
+            alert("계좌번호를 복사했습니다");
+          }
+          if ($(e.trigger).hasClass("btn-addr-copy")) {
+            alert("주소를 복사했습니다");
+          }
+
+          e.clearSelection();
+        });
+        Kakao.init("f2af66eb14319bcd2dd168b0f2c05fa7");
+      });
+    </script>
+
+    <!--주소 넣기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+    <script type="text/javascript">
+      function kakaoShare() {
+        Kakao.Share.sendCustom({
+          templateId: 104721,
+          templateArgs: {
+            TITLE: "은호&송희 결혼식에 초대합니다!",
+            DESC: "7월 6일 오후 5시\r\n" + "아펠가모 선릉\r\n",
+          },
+        });
+      }
+    </script>
+    <!-- Code injected by live-server -->
+    <script>
+      // <![CDATA[  <-- For SVG support
+      if ("WebSocket" in window) {
+        (function () {
+          function refreshCSS() {
+            var sheets = [].slice.call(document.getElementsByTagName("link"));
+            var head = document.getElementsByTagName("head")[0];
+            for (var i = 0; i < sheets.length; ++i) {
+              var elem = sheets[i];
+              var parent = elem.parentElement || head;
+              parent.removeChild(elem);
+              var rel = elem.rel;
+              if (
+                (elem.href && typeof rel != "string") ||
+                rel.length == 0 ||
+                rel.toLowerCase() == "stylesheet"
+              ) {
+                var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, "");
+                elem.href =
+                  url +
+                  (url.indexOf("?") >= 0 ? "&" : "?") +
+                  "_cacheOverride=" +
+                  new Date().valueOf();
+              }
+              parent.appendChild(elem);
+            }
+          }
+          var protocol =
+            window.location.protocol === "http:" ? "ws://" : "wss://";
+          var address =
+            protocol + window.location.host + window.location.pathname + "/ws";
+          var socket = new WebSocket(address);
+          socket.onmessage = function (msg) {
+            if (msg.data == "reload") window.location.reload();
+            else if (msg.data == "refreshcss") refreshCSS();
+          };
+          if (
+            sessionStorage &&
+            !sessionStorage.getItem("IsThisFirstTime_Log_From_LiveServer")
+          ) {
+            console.log("Live reload enabled.");
+            sessionStorage.setItem("IsThisFirstTime_Log_From_LiveServer", true);
+          }
+        })();
+      } else {
+        console.error(
+          "Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading."
+        );
+      }
+      // ]]>
+    </script>
+  </body>
 </html>
-  
