@@ -79,7 +79,7 @@ var Sakura = function Sakura(selector, options) {
 
   function elementInViewport(el) {
     var rect = el.getBoundingClientRect();
-    return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth);
+    return rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight*0.6 || document.documentElement.clientHeight*0.6) && rect.right <= (window.innerWidth*0.6 || document.documentElement.clientWidth*0.6);
   }
 
   this.createPetal = function () {
@@ -114,9 +114,10 @@ var Sakura = function Sakura(selector, options) {
     petal.style.borderRadius = "".concat(randomInt(_this.settings.maxSize, _this.settings.maxSize + Math.floor(Math.random() * 10)), "px ").concat(randomInt(1, Math.floor(width / 4)), "px");
     petal.style.height = "".concat(height, "px");
     petal.style.left = "".concat(Math.random() * document.documentElement.clientWidth - 100, "px");
-    petal.style.marginTop = "".concat(-(Math.floor(Math.random() * 20) + 15), "px");
-    petal.style.width = "".concat(width, "px"); // Remove petals of which the animation ended.
 
+    //petal.style.marginTop = "".concat(-(Math.floor(Math.random() * 20) + 15), "px");
+    petal.style.width = "".concat(width, "px"); // Remove petals of which the animation ended.
+    petal.style.top = "-".concat(Math.floor(Math.random() * window.innerHeight), "px");
     PrefixedEvent(petal, 'AnimationEnd', function () {
       if (!elementInViewport(petal)) {
         petal.remove();
