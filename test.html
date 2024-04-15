@@ -1,21 +1,155 @@
-<html>
-<style>
-.target {
-  display: block;
-  max-width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery - 벚꽃 흩날리는 효과 | 컨트롤 + CCCV</title>
+    <meta name="description" content="jQuery - 벚꽃 흩날리는 효과 | 컨트롤 + CCCV" />
+    <meta name="robots" content="noindex">
+    <link rel="shortcut icon" href="https://ctrlcccv.github.io/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <!--기본틀 css-->
 
-.alpha-target {
-  -webkit-mask-image: url(/assets/sample/masking.png);
-  -webkit-mask-mode: alpha;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-}
-</style>
+    <link rel="stylesheet" href="/css/jquery-ui.css" />
+    <!--ui css-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <!--스크롤 애니메이션 css-->
+    <link rel="stylesheet" href="/css/owl.carousel.min.css" />
+    <!--버튼 css-->
+    <link rel="stylesheet" href="/css/fancybox.css" />
+    <!--갤러리 박스 css-->
+    <link rel="stylesheet" href="/css/panzoom.css" />
+    <!--사진 줌 css-->
+    <link rel="stylesheet" href="/css/notifIt.css" />
+    <!-- css-->
+    <link rel="stylesheet" href="/css/animate.min.css" />
+
+    <!--메인 css 수정할 것~~~~~~~~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--메인 css 수정할 것~~~~~~~~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/masking.css">
+
+</head>
 <body>
-<img class="target alpha-target" src="/assets/sample/1.jpg" alt="Masked image">
-</body>
-</html>
-
+  <div
+                          style="
+                            overflow: visible;
+                            width: 100%;
+                            height: 0px;
+                            position: absolute;
+                            display: block;
+                            margin: 0px;
+                            padding: 0px;
+                            border: 0px none;
+                            border-radius: 30px;
+                            top: 0px;
+                            left: 0px;
+                            z-index: 106;
+                          "
+                        >
+                          <div
+                            style="
+                              position: absolute;
+                              top: 58px;
+                              left: 139px;
+                              z-index: 0;
+                              margin: 0px;
+                              padding: 0px;
+                              border: 0px solid transparent;
+                              border-radius: 30px;
+                              display: block;
+                              width: 0px;
+                              height: 0px;
+                              overflow: visible;
+                              cursor: default;
+                              box-sizing: content-box !important;
+                            "
+                          >
+                            <div
+                              style="
+                                position: absolute;
+                                top: 0px;
+                                left: 0px;
+                                z-index: 0;
+                                margin: 0px;
+                                padding: 0px;
+                                border: 2px solid rgb(51, 51, 51);
+                                border-radius: 30px;
+                                display: block;
+                                cursor: default;
+                                box-sizing: content-box !important;
+                                background: rgb(255, 255, 255);
+                              "
+                            >
+                              <div
+                                style="
+                                  margin: 0px;
+                                  padding: 0px;
+                                  border: 0px solid transparent;
+                                  border-radius: 30px;
+                                  display: inline-block;
+                                  box-sizing: content-box !important;
+                                  width: 150px;
+                                  height: 33px;
+                                "
+                              >
+                                <div
+                                  style="
+                                    text-align: center;
+                                    padding: 10px;
+                                    width: 150px;
+                                    display: inline-block;
+                                    font-size: 13px;
+                                  " class="ff-gb-r"
+                                >
+                                  아펠가모 선릉
+                                </div>
+                              </div>
+                              <div
+                                style="
+                                  margin: 0px;
+                                  padding: 0px;
+                                  width: 0px;
+                                  height: 0px;
+                                  position: absolute;
+                                  border-width: 24px 10px 0px;
+                                  border-style: solid;
+                                  border-color: rgb(51, 51, 51) transparent
+                                  border-radius: 50%
+                                    transparent;
+                                  border-image: initial;
+                                  pointer-events: none;
+                                  box-sizing: content-box !important;
+                                  bottom: -25px;
+                                  left: 65px;
+                                "
+                              ></div>
+                              <div
+                                style="
+                                  margin: 0px;
+                                  padding: 0px;
+                                  width: 0px;
+                                  height: 0px;
+                                  position: absolute;
+                                  border-width: 24px 10px 0px;
+                                  border-radius: 50%
+                                  border-style: solid;
+                                  border-color: rgb(255, 255, 255) transparent
+                                    transparent;
+                                  border-image: initial;
+                                  pointer-events: none;
+                                  box-sizing: content-box !important;
+                                  bottom: -22px;
+                                  left: 65px;
+                                "
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+  </body>
+  </html>
+  
