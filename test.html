@@ -1,0 +1,21 @@
+<html>
+<style>
+.target {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.alpha-target {
+  -webkit-mask-image: url(/assets/sample/masking.png);
+  -webkit-mask-mode: alpha;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+}
+</style>
+<body>
+<img class="target alpha-target" src="/assets/sample/1.jpg" alt="Masked image">
+</body>
+</html>
+

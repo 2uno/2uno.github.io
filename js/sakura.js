@@ -22,7 +22,7 @@ var Sakura = function Sakura(selector, options) {
   var defaults = {
     className: 'sakura',
     // Classname of the petal. This corresponds with the css.
-    fallSpeed: 0.5,
+    fallSpeed: 0.4,
     // Speed factor in which the petal falls.
     maxSize: 16,
     // The maximum size of the petal.
