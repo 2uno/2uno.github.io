@@ -3089,8 +3089,8 @@ p {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-right: 3.125rem;
-	margin-left: 3.125rem;
+	margin-right: 2.125rem;
+	margin-left: 2.125rem;
 }
 
 .contact-card .box-couple .contact-info {
@@ -3212,7 +3212,7 @@ p {
 .accordion-contact .accordion-body {
 	background-color: #fff;
 	text-align: left;
-	padding: 0 22px;
+	padding: 0 12px;
 }
 
 .accordion-contact .account-info {
