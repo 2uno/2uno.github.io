@@ -23,6 +23,23 @@
   font-display: block;
 }
 
+/*
+@font-face {
+	font-family: GyeonggiBatang Regular;
+	src: url(../fonts/GyeonggiBatang_Regular.woff2) format("woff2"),url(../fonts/GyeonggiBatang_Regular.woff) format("woff");
+	font-style: normal;
+	font-weight: 400;
+	font-display: block
+}
+
+@font-face {
+	font-family: GyeonggiBatang Bold;
+	src: url(../fonts/GyeonggiBatang_Bold.woff2) format("woff2"),url(../fonts/GyeonggiBatang_Bold.woff) format("woff");
+	font-style: normal;
+	font-weight: 700;
+	font-display: block
+}*/
+
 @font-face {
   font-family: mom_to_daughter;
   src: url(../fonts/MomToDaughter.woff2) format("woff2"),
@@ -57,7 +74,23 @@
   font-weight: normal;
   font-style: normal;
 }
+/*
+@font-face {
+	font-family: NanumSquareRoundR;
+	src: url(../fonts/NanumSquareRoundR.woff2) format("woff2"),url(../fonts/NanumSquareRoundR.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block
+}
 
+@font-face {
+	font-family: NanumSquareRoundB;
+	src: url(../fonts/NanumSquareRoundB.woff2) format("woff2"),url(../fonts/NanumSquareRoundB.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block
+}
+*/
 
 @font-face {
   font-family: "jgaegu";
@@ -67,6 +100,30 @@
   font-style: normal;
 }
 
+/*
+@font-face {
+	font-family: jgaegu;
+	src: url(../fonts/Jgaegu-Light.woff2) format("woff2"),url(../fonts/Jgaegu-Light.woff) format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: jgaeguR;
+	src: url(../fonts/Jgaegu-Medium.woff2) format("woff2"),url(../fonts/Jgaegu-Medium.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: block;
+}
+
+@font-face {
+	font-family: jgaeguB;
+	src: url(../fonts/Jgaegu-Bold.woff2) format("woff2"),url(../fonts/Jgaegu-Bold.woff) format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-display: block
+}*/
 
 @font-face {
   font-family: "cafe24";
@@ -76,7 +133,23 @@
     format("woff2");
   font-display: swap;
 }
+/*
+@font-face {
+	font-family: 'cafe24';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: block
+}
 
+@font-face {
+	font-family: cafe24;
+	src: url(../fonts/Cafe24Dongdong.woff2) format("woff2"),url(../fonts/Cafe24Dongdong.woff) format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: block
+}
+*/
 
 /* css default:s */
 body,
@@ -1562,6 +1635,9 @@ img[usemap] {
   word-break: keep-all;
 }
 
+.list-history .:last-child {
+  padding-bottom: 0;
+}
 
 .list-history .item-history {
   border-top: 1px solid #dcdddd;
@@ -1631,17 +1707,7 @@ img[usemap] {
 */
 
 .unit-main{
-  animation: fadeIn 7s forwards;
-
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0; /* 시작 시 투명도 1 */
-  }
-  
-  100% {
-    opacity: 1; /* 종료 시 투명도 0 */
-  }
+  animation: fadeIn 1s forwards;
 }
 
 .unit-form {
@@ -4476,7 +4542,20 @@ table.dataTable.no-footer {
   background: transparent;
   box-shadow: none;
 }
-
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  box-sizing: border-box;
+  display: inline-block;
+  min-width: 1.5em;
+  padding: 0.5em 1em;
+  margin-left: 2px;
+  text-align: center;
+  text-decoration: none !important;
+  cursor: pointer;
+  *cursor: hand;
+  color: #333 !important;
+  border: 1px solid transparent;
+  border-radius: 2px;
+}
 
 .modal .btn-bank-copy {
   border-radius: 2rem;
@@ -5250,4 +5329,14 @@ span.greeting-go-text {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* 시작 시 투명도 1 */
+  }
+  
+  100% {
+    opacity: 1; /* 종료 시 투명도 0 */
+  }
 }
