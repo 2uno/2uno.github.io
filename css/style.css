@@ -5328,3 +5328,37 @@ span.greeting-go-text {
     flex-wrap: wrap;
 }
 
+
+
+.intromask {
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 480px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0);
+  z-index: 9999;
+  opacity: 1;
+
+/* 페이드아웃 애니메이션 적용 */
+}
+
+.loadingImg {
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh; /* 화면 세로를 채우도록 설정 */
+  overflow: hidden; /* 이미지가 넘칠 경우를 대비하여 추가 */
+}
+
+.loadingImg img {
+  width: auto;
+  height: 100%; /* 세로를 100%로 채우도록 설정 */
+  opacity: 1;
+  object-fit: cover; /* 이미지 비율을 유지하면서 채우도록 설정 */
+}
+

@@ -2329,19 +2329,7 @@
       </div>
 
       <script type="text/javascript" src="js/main.js"></script>
-      <script>
-        function showWeddingCard() {
-          document.querySelector(".intro-container").style.display = "none";
-          document.querySelector(".wedding-card").style.display = "block";
-          // 벚꽃 애니메이션 시작 함수 호출
-          startPetalAnimation();
-          AOS.init();
-        }
-     
 
-        // 페이지 로드 후 3초 후에 인트로 종료
-        setTimeout(showWeddingCard, 4000);
-      </script>
 
       <!-- 벚꽃 애니메이션을 처리하는 코드 -->
       <script>
@@ -2399,6 +2387,7 @@
           // 로딩 완료 후 벚꽃 잎 생성 시작
           setInterval(petalGen, defaults.newOn);
         }
+        startPetalAnimation();
       </script>
 
       <style>

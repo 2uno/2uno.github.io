@@ -2,11 +2,9 @@ const audio = document.getElementById('audio');
 const playPauseBtn = document.getElementById('play-pause-btn');
 let isPageActive = true; // 페이지가 활성화되어 있는지 여부를 나타내는 변수
 
-// 음악이 로드될 때 페이드인 효과 적용
+// 페이지가 로드될 때 페이드인 효과 적용
 audio.volume = 0;
-audio.addEventListener('loadedmetadata', function() {
-  fadeAudioIn(audio);
-});
+fadeAudioIn(audio);
 
 // 페이지가 활성화되었을 때 음악을 재생
 document.addEventListener('visibilitychange', function() {
@@ -36,12 +34,12 @@ playPauseBtn.addEventListener('click', function() {
 function fadeAudioIn(audioElement) {
   let volume = 0;
   const fadeInInterval = setInterval(function() {
-    volume += 0.05;
+    volume += 0.01; // 조금씩 증가하도록 수정
     if (volume >= 1) {
       clearInterval(fadeInInterval);
     }
     audioElement.volume = volume;
-  }, 100);
+  }, 100); // 간격을 100으로 유지하여 1초 동안 100회 반복되도록 수정
 }
 
 // 음악을 재생하는 함수
