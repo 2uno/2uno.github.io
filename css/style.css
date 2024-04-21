@@ -1706,9 +1706,6 @@ img[usemap] {
 6. 청첩장 제작
 */
 
-.unit-main{
-  animation: fadeIn 1s forwards;
-}
 
 .unit-form {
   border-top: 1px solid #dcdddd;
@@ -5331,12 +5328,3 @@ span.greeting-go-text {
     flex-wrap: wrap;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0; /* 시작 시 투명도 1 */
-  }
-  
-  100% {
-    opacity: 1; /* 종료 시 투명도 0 */
-  }
-}

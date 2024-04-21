@@ -5,9 +5,9 @@
   display:flex;
   justify-content: center;
   align-items: center;
-
-  z-index: 90;
-  animation: fadeOut 4s forwards;
+  position: relative;
+  z-index: 2;
+  animation: fadeOut 7s forwards;
 }
 
 .heart {
@@ -16,6 +16,13 @@
   animation: heartbeat 2s infinite;
   position: absolute;
   margin: 0 10px;
+}
+
+.wedding-card {
+
+  position:relative;
+  z-index: 1;
+  animation: fadeIn 4s forwards;
 }
 
 @keyframes heartbeat {
@@ -41,5 +48,16 @@
   
   100% {
     opacity: 0; /* 종료 시 투명도 0 */
+    z-index: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* 시작 시 투명도 0 */
+  }
+  
+  100% {
+    opacity: 1; /* 종료 시 투명도 1 */
   }
 }
