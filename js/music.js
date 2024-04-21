@@ -45,10 +45,10 @@ function fadeAudioIn(audioElement) {
   let volume = 0;
   const fadeInInterval = setInterval(function () {
     volume += FADE_STEP; // 조금씩 증가하도록 수정
-    if (volume >= 1 || volume * MAX_VOLUME >= 20) { // 볼륨이 50을 넘지 않도록 수정
+    if (volume >= 1 || volume * MAX_VOLUME >= 10) { // 볼륨이 50을 넘지 않도록 수정
       clearInterval(fadeInInterval);
     }
-    audioElement.volume = Math.min(volume * MAX_VOLUME, 20); // 최대 볼륨 50까지 적용
+    audioElement.volume = Math.min(volume * MAX_VOLUME, 10); // 최대 볼륨 50까지 적용
   }, FADE_INTERVAL); // 페이드인 간격 적용
 }
 
