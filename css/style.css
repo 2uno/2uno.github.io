@@ -1400,8 +1400,8 @@ header {
 .container {
   width: 100%;
   max-width: 480px;
-  padding-right: 1.525rem;
-  padding-left: 1.525rem;
+  padding-right: 2.525rem;
+  padding-left: 2.525rem;
   position: relative;
 }
 
