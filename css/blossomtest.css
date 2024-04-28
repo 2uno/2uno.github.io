@@ -1,0 +1,25 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cherry_blossom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('assets/main.jpg');
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .petal {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('assets/petal.png');
+    background-size: contain;
+    pointer-events: none;
+  }
+  
