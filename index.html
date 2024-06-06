@@ -2364,7 +2364,7 @@
           setTimeout(function () {
             fadeOut(mask); // 페이드 아웃 함수 호출
             html.style.overflow = "auto"; // 스크롤 방지 해제
-          }, 3000); // 6초 후에 실행되도록 설정
+          }, 2500); // 6초 후에 실행되도록 설정
 
           // 페이드 아웃 함수 정의
           function fadeOut(element) {
@@ -2380,7 +2380,7 @@
                 clearInterval(fadeEffect); // 투명도가 0이 되면 애니메이션 중단
                 element.style.display = "none"; // 요소를 숨김
               }
-            }, 20); // 10밀리초마다 실행되도록 설정
+            }, 40); // 10밀리초마다 실행되도록 설정
           }
         });
       </script>
